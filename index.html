@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RTHG LABEL</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="rthgLOGO.jpg" alt="company's-logo" />
+      <h3>ENTER YOUR CYLINDER INFORMATION</h3>
+      <div class="part-number">
+        <label for="">Select your Cylinder Litre:</label>
+        <select name="part-number" id="cylinder-options">
+          <option value="8">8</option>
+          <option value="16">16</option>
+          <option value="32">32</option>
+          <option value="52">52</option>
+          <option value="106">106</option>
+          <option value="147">147</option>
+          <option value="180">180</option>
+        </select>
+      </div>
+      <div class="agent-weight">
+        <label for="">Enter your Agent weight (Kg):</label>
+        <input type="number" name="" id="agent-weight" /><br />
+      </div>
+
+      <div class="cylinder-weight">
+        <label for="">Enter your Cylinder weight (Kg):</label>
+        <input type="number" name="" id="cylinder-weight" />
+      </div>
+
+      <p class="gross-weight" data-gweight="static">Gross weight:</p>
+      <p class="fill-density">Fill density:</p>
+      <button class="submit" onclick="Showresult()">SUBMIT</button>
+      <button class="reset" onclick="Reset()">RESET</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
